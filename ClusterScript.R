@@ -4,8 +4,8 @@ segment = Single %>%
          Fatal, Property.Damage, Personal.Injury, 
          Belts, Male = Gender)
 
-segment$Male = gsub("M", "1", seg$Male)
-segment$Male = gsub("F", "0", seg$Male)
+segment$Male = gsub("M", "1", segment$Male)
+segment$Male = gsub("F", "0", segment$Male)
 
 dist = dist(segment, method = "binary")
 
